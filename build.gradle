@@ -1,0 +1,13 @@
+apply plugin: 'java'
+
+compileJava{
+    sourceCompatibility JavaVersion.VERSION_1_7.toString()
+    targetCompatibility JavaVersion.VERSION_1_7.toString()
+}
+
+jar{
+    manifest {
+        attributes("Implementation-Title": "Model-Component",
+                   "Implementation-Version": 1)
+    }
+}
