@@ -1,7 +1,11 @@
 package io.fss.model.entities;
 
-/**
- * Created by favanzo on 02/05/17.
- */
-public interface FsEntity {
+import io.fss.model.entities.properties.FsEntitiesProperties;
+
+import java.lang.reflect.Field;
+import java.lang.reflect.Method;
+
+public interface FsEntity extends FsEntitiesProperties{
+    void setDefault(FsEntity entity);
+    FsEntity getDefault();
 }

@@ -7,7 +7,7 @@ import java.lang.annotation.Target;
 
 @Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)
-public @interface FsEntity{
+public @interface FsEntities {
 
     String MANY_TO_MANY="@ManyToMany";
     String MANY_TO_ONE="@ManyToOne";

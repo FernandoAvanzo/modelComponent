@@ -1,7 +1,11 @@
 package io.fss.model.entities.properties;
 
-/**
- * Created by favanzo on 03/05/17.
- */
-public enum DefaultEntitiesProperties {
+import java.lang.reflect.Field;
+import java.lang.reflect.Method;
+
+enum DefaultEntitiesProperties implements FsEntitiesProperties{
+    CONST_ENTITIES_PROPERTIES;
+
+    @Override
+    public EntityScheme makeScheme(){return new DefaultEntityScheme();}
 }

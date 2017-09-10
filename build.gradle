@@ -11,3 +11,13 @@ jar{
                    "Implementation-Version": 1)
     }
 }
+
+repositories {
+    jcenter()
+    mavenCentral()
+}
+
+dependencies{
+
+    testCompile 'junit:junit:4.12'
+}

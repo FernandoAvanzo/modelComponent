@@ -1,7 +1,4 @@
-package io.fss.test.model.entities.properties;
+package io.fss.test.model.entities;
 
-/**
- * Created by favanzo on 04/05/17.
- */
-public class EntityDefaultTest {
+public class EntityDefaultTest{
 }
